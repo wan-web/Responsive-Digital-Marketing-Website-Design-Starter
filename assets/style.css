@@ -130,7 +130,37 @@ header {
 }
 
 /*======================== Home ===================*/
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0;
+}
 
+.home__data, .home__image {
+  flex: 50%;
+}
+
+.home__data--title {
+  color: var(--color-white);
+  font-size: 2.5rem;
+}
+
+.home__data--title span {
+  font-weight: 200;
+}
+
+.home__data--desc {
+  margin-top: 2rem;
+  color: var(--color-white);
+  line-height: 2;
+}
+
+.home__image img {
+  width: 100%;
+  height: auto;
+}
 
 /*===================== About ======================*/
 
