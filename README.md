@@ -1,23 +1,4 @@
-# Responsive Digital Marketing Website
+#CSS
+scroll-behavior: smooth; 를 쓰면 링크를 클릭했을때 스크롤 화면이 스무스하게 이동한다.
 
-Responsive Digital Marketing Website Design using HTML, CSS and JavaScript
-
-
-## 🚀 Features
-
- - Digital Marketing Website with fully responsive design
- - Compatible with all the mobile devices with beautiful
-   user interface
- - Smooth Scrolling feature with sticky navigation bar
-    
-## 💡 Watch on Youtube
-https://youtu.be/DilVAV3mLDQ
-
-## 🔔 Subscribe for more videos 
-https://bit.ly/3d0CNdK
-
-## Screenshots
-
-![App Screenshot](https://github.com/praveenkanwar0/Responsive-Digital-Marketing-Website-Design-Starter/blob/master/digimart-preview.png)
-
-# Responsive-digital-marketing
+scroll-behavior: auto; 를 쓰면 화면이 순간이동함.

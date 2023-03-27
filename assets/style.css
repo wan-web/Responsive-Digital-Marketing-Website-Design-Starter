@@ -1,20 +1,133 @@
 /* ================= imports ==============*/
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Poppins', sans-serif; */
 
 /*================== CSS variables ========== */
 
+:root {
+  /* Container */
+  --container-width: 70%;
+
+  /* Colors */
+  --color-primary: #9859e3;
+  --color-primary-rgb: 152, 89, 227;
+  --color-primary-accent: #542ac3;
+  --color-secondary: #ff6397;
+  --color-secondary-accent: #fe7ea9;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #8491a5;
+  --color-gray-rgb: 132, 145, 165;
+  --primary-linear-gradient: linear-gradient(90deg, rgba(152, 89, 227, 1) 0%, rgba(84, 42, 195, 1) 100%);
+  --secondary-linear-gradient: linear-gradient(90deg, rgba(255, 99, 151, 1) 0%, rgba(254, 126, 169, 1) 100%);
+
+  /* Fonts and Typography */
+  --body-font : 'Poppins', sans-serif;
+}
+
 /*================ Base =================*/
 
-/*=================== Layouts ================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*=================== Layouts ================*/
+.container {
+  width: var(--container-width); /* 70% */
+  margin-inline: auto; /* margin-left와 margin-right를 한번에 설정한다. */
+}
 
 
 /*==================== Reusable Classes & Selectors =============== */
 
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
+.btn {
+  display: block;
+  padding: 10px 30px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 50px;
+  width: fit-content; /* 왜 하는지 모르겠음 */
+}
+
+.btn-primary {
+  background: var(--primary-linear-gradient);
+  color: var(--color-white);
+}
+
+.btn-secondary {
+  background: var(--secondary-linear-gradient);
+  color: var(--color-white);
+}
+
+.tag {
+  display: block;
+  padding: 3px 15px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 50px;
+  width: fit-content; /* 왜 하는지 모르겠음 */
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 0.8rem; /* 16px이 1rem이니까 12.8px */
+  font-weight: 600;
+}
 
 /*====================== Header ==================== */
+header {
+  background: var(--primary-linear-gradient);
+}
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  color: var(--color-white);
+}
+
+.nav__logo {
+  color: var(--color-secondary);
+}
+
+.nav__menu {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav__link {
+  color: var(--color-white);
+}
+
+.mb-show {
+  display: none;
+}
+
+.show {
+  right: 0;
+}
 
 /*======================== Home ===================*/
 
