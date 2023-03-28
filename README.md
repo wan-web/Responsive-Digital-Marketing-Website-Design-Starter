@@ -7,3 +7,17 @@ text-indent : 0
 text-indent는 들여쓰기와 내어쓰기를 설정한다.
 0이면 기본값이고 값이 양수이면 들여쓰기 음수이면 내어쓰기가 된다.
 내어 쓰기를 할 때는 왼쪽에 여백을 적절히 줘야된다.
+
+#스크롤 애니메이션
+scrollreveal 사용
+ex) 
+const martScroll = ScrollReveal({
+  origin: 'bottom',
+  distance: '80px',
+  duration: 2000,
+  reset: true
+})
+
+// scroll Home
+martScroll.reveal('.home__data--title', {})
+martScroll.reveal('.home__data--desc', {})
