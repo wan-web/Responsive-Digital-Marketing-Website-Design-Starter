@@ -1,12 +1,35 @@
 /*================Sticky Navigation Bar===============*/
+let navbar = document.querySelector('#nav');
+let navPos = navbar.getBoundingClientRect().top;
 
+window.addEventListener('scroll', e => {
+  let scrollPos = window.scrollY;
+  if(scrollPos > navPos) {
+    navbar.classList.add('sticky')
+  }else {
+    navbar.classList.remove('sticky')
+  }
+})
 
 
 /*================Navigation Bar Open/Close Toggle===============*/
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId)
+  nav = document.getElementById(navId)
+  if(toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show')
+    })
+  }
+}
 
-
+showMenu('nav-toggler', 'nav-menu');
 /*================Close Navigation Bar on Link Click===============*/
-
+const navLink = document.querySelectorAll('.nav__link');
+navLink.forEach(link => link.addEventListener('click', () => {
+  const nav = document.querySelector('#nav-menu')
+  nav.classList.remove('show');
+}))
 
 
 /*================Testimonial Swiper initialization and configuration===============*/
@@ -30,7 +53,7 @@ const martScroll = ScrollReveal({
   origin: 'bottom',
   distance: '80px',
   duration: 2000,
-  reset: true
+  reset: false
 })
 
 // scroll Home
