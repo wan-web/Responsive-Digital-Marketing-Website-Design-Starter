@@ -46,6 +46,10 @@ a {
 ul {
   list-style: none;
 }
+button {
+  border: none;
+  outline: none;
+}
 
 /*=================== Layouts ================*/
 .container {
@@ -261,18 +265,248 @@ header {
 }
 
 /*============================= Services ==================*/
+.services {
+  background: var(--primary-linear-gradient);
+}
 
+.services__tag {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
+.services__title {
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: var(--color-white);
+}
+
+.services__data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services__item {
+  flex: 25%;
+  padding: 5px;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.services__item i {
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+.services__desc {
+  font-size: 0.8rem;
+  padding: 10px 0;
+  color: var(--color-white);
+}
+
+.services__buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
 /*===================== Testimonials ================*/
+.testimonial__tag span {
+  color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.2);
+  margin-left: auto;
+}
 
+.testimonial__title {
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-align: right;
+}
 
+.testimonial__data {
+  margin: 4rem 0;
+  background: var(--primary-linear-gradient);
+  border-radius: 10px;
+}
+
+.testimonial__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 8rem;
+}
+
+.testimonial__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.testimonial__text {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.testimonial__name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--color-white);
+}
+
+.testimonial__company {
+  font-size: 0.8rem;
+  padding: 10px 0;
+  color: var(--color-white);
+}
+/* ======== SWIPER ======== */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-white);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.2rem;
+}
+
+.swiper-pagination {
+  bottom: 85px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-gray);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-white) !important;
+}
 
 /*========================= Contact Us ============================*/
+.contact {
+  background: var(--primary-linear-gradient);
+}
 
+.contact__tag {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: var(--color-white);
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.contact__form > input {
+  height: 50px;
+}
+
+.contact__form > textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+.contact__form > input,
+.contact__form > textarea {
+  width: 40%;
+  border: 1px solid var(--color-secondary);
+  border-radius: 25px;
+  outline: none;
+  text-indent: 10px;
+}
+
+.contact__button-wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
 
 /*======================== Footer ======================== */
+.footer__container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.footer__container, 
+.footer__navigation, 
+.footer__links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2.5rem;
+  flex: 25%;
+}
 
+.footer__logo span {
+  color: var(--color-secondary);
+}
 
+.footer__text {
+  padding-top: 2rem;
+}
+
+.footer__navigation h2,
+.footer__contact h2 {
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.footer__links {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__links > a {
+  color: var(--color-black);
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer__social > a {
+  padding-right: 20px;
+  color: var(--color-secondary);
+}
+
+.footer__copyright {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 10px;
+  border-top: 1px solid var(--color-gray);
+}
 
 /*====================== Responsive Design ======================*/
 
