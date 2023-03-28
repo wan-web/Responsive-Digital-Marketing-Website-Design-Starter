@@ -163,8 +163,51 @@ header {
 }
 
 /*===================== About ======================*/
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
 
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
 
+.about__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about__tag {
+  color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.2);
+}
+
+.about__data--title {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.about__data--desc {
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+
+.about__data--quote {
+  font-size: 1.2rem;
+  color: var(--color-gray);
+  padding: 10px 0;
+}
+
+.about__data--quote i {
+  font-size: 2.5rem;
+  color: var(--color-secondary);
+}
 /*====================== Why Choose Us =================== */
 
 
