@@ -209,7 +209,56 @@ header {
   color: var(--color-secondary);
 }
 /*====================== Why Choose Us =================== */
+.whychooseus {
+  padding: 2rem 0;
+}
 
+.whychooseus__tag span {
+  color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.2);
+  margin: 0 auto;
+}
+
+.whychooseus__title {
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.whychooseus__data {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.whychooseus__card {
+  flex: 1;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.whychooseus__card i {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 15px;
+  color: var(--color-primary);
+}
+
+.whychooseus__card--title {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.whychooseus__card--desc {
+  font-size: 0.8rem;
+  padding: 10px 0px;
+  color: var(--color-gray);
+}
 
 /*============================= Services ==================*/
 
